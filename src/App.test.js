@@ -1,8 +1,10 @@
+import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders learn react link', () => {
+test('renders DESKTOP', () => {
   render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
+  // window.innerWidth = 1024
+  const linkElement = screen.getByText(/DESKTOP/i);
   expect(linkElement).toBeInTheDocument();
 });

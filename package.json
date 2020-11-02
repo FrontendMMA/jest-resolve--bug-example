@@ -23,6 +23,7 @@
     "dotenv": "8.2.0",
     "dotenv-expand": "5.1.0",
     "eslint": "^7.11.0",
+    "eslint-config-airbnb": "18.2.0",
     "eslint-config-react-app": "^6.0.0",
     "eslint-plugin-flowtype": "^5.2.0",
     "eslint-plugin-import": "^2.22.1",
@@ -122,7 +123,9 @@
     "modulePaths": [],
     "moduleNameMapper": {
       "^react-native$": "react-native-web",
-      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+      "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy",
+      "^ui(.*)": "<rootDir>/src/ui$1",
+      "^helpers/(.*)": "<rootDir>/src/helpers/$1"
     },
     "moduleFileExtensions": [
       "web.js",
