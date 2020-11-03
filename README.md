@@ -1,3 +1,9 @@
+# Reproduce Bug
+1. change test file or tested file (App.js / App.test.js)
+2. execute jest -o (repeats in a "onlyChanged" mode)
+
+---
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
