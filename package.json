@@ -37,9 +37,8 @@
     "fs-extra": "^9.0.1",
     "html-webpack-plugin": "4.5.0",
     "identity-obj-proxy": "3.0.0",
-    "jest": "26.6.0",
-    "jest-circus": "26.6.0",
-    "jest-resolve": "26.6.0",
+    "jest": "^26.6.0",
+    "jest-circus": "^26.6.0",
     "jest-watch-typeahead": "0.6.1",
     "mini-css-extract-plugin": "0.11.3",
     "optimize-css-assets-webpack-plugin": "5.0.4",
@@ -110,7 +109,7 @@
       "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
     ],
     "testEnvironment": "jsdom",
-    "testRunner": "/Users/mamartynov/Projects/jest-resolve-bug/node_modules/jest-circus/runner.js",
+    "testRunner": "jest-circus/runner.js",
     "transform": {
       "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "<rootDir>/node_modules/babel-jest",
       "^.+\\.css$": "<rootDir>/config/jest/cssTransform.js",
@@ -149,5 +148,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "resolutions": {
+    "jest-resolve-dependencies": "26.6.1"
   }
 }
